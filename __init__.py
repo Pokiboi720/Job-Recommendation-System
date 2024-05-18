@@ -62,3 +62,13 @@ def main():
 # Run the Streamlit app
 if __name__ == '__main__':
     main()
+
+import nltk
+
+# Download the stopwords
+nltk.download('stopwords')
+
+# Now you can use stopwords
+from nltk.corpus import stopwords
+
+stop_words = set(stopwords.words('english'))
